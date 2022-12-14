@@ -10,7 +10,7 @@ const Projects = (props: Props) => {
     return (
         <div className="h-screen relative flex py-10 overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
             <h3 className="absolute top-24 uppercase tracking-[20px] text-[#5ceacd] text-2xl">Projects</h3>
-            <div className="realtive w-full flex overflow-x-scroll min-h-screen overflow-y-hidden snap-x snap-mandatory z-20">
+            <div className="realtive w-full flex overflow-x-scroll min-h-screen overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5ceacd]/80 scrollbar-thin">
                 {projects.map((project, i) =>
                     <motion.div
                         initial={{ opacity: 0 }}
