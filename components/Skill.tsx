@@ -21,7 +21,7 @@ const Skill = ({ directionLeft }: Props) => {
             duration: 1
         }}
         viewport={{once: true}}
-        className="rounded-full border border-[#5ceacd] object-cover h-10 w-10 md:h-20 md:w-20 filter group-hover:grayscale transition duration-300 ease-in-out"
+        className="rounded-full border border-[#5ceacd] object-cover h-20 w-20 xl:h-25 xl:w-25 filter group-hover:grayscale transition duration-300 ease-in-out"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4YuO05vRj22LwuBOl8Kad65ZF_MlfnGNYY4v4X9qb&s"
          />
     </div>
