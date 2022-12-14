@@ -8,7 +8,7 @@ type Props = {}
 const Hero = (props: Props) => {
     const [text, count] = useTypewriter({
         words: ["Hi, I'm Daf",
-            "MusicEnthusiast.jsx",
+            "MusicLover.jsx",
             "<HorrorFan />"
         ],
         loop: true,
@@ -26,7 +26,7 @@ const Hero = (props: Props) => {
                     <span className="mr-3">{text}</span>
                     <Cursor cursorColor="#5ceacd" />
                 </h1>
-                <div className="pt-5">
+                <div className="pt-5 flex items-center justify-center gap-[10px]">
                     <Link href="#about">
                         <button className="hero-button">About</button>
                     </Link>
