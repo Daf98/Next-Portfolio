@@ -25,19 +25,19 @@ const Contact = (props: Props) => {
             className="relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 h-screen justify-evenly mx-auto items-center">
             <h3 className="absolute top-24 uppercase tracking-[20px] text-[#5ceacd] text-2xl">Contact</h3>
             <div className="flex flex-col space-y-5">
-                <h4 className="text-4xl text-center font-semibold">Get in touch :)</h4>
-                <div className="space-y-10">
+                <h4 className="text-xl md:text-4xl text-center font-semibold md:pt-10">Get in touch :)</h4>
+                <div className="space-y-10 flex flex-col items-center">
                     <div className="flex items-center space-x-5 justify-center">
-                        <PhoneIcon className="text-[#5ceacd] animate-pulse h-7 w-7" />
-                        <p className="text-2xl">+54 342 58 7449</p>
+                        <PhoneIcon className="text-[#5ceacd] animate-pulse h-5 w-5 md:h-7 md:w-7" />
+                        <p className="text-md md:text-2xl">+54 342 58 7449</p>
                     </div>
                     <div className="flex items-center space-x-5 justify-center">
-                        <EnvelopeIcon className="text-[#5ceacd] animate-pulse h-7 w-7" />
-                        <p className="text-2xl">dafne.azzolina@gmail.com</p>
+                        <EnvelopeIcon className="text-[#5ceacd] animate-pulse h-5 w-5 md:h-7 md:w-7" />
+                        <p className="text-md md:text-2xl">dafne.azzolina@gmail.com</p>
                     </div>
-                    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit mx-auto">
+                    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 px-3">
                         <div className="flex space-x-2">
-                            <input {...register('name')} type="text" placeholder="Name" className="contact-input" />
+                            <input {...register('name')} type="text" placeholder="Name" className="contact-input w-[50%]" />
                             <input {...register('email')} type="email" placeholder="Email" className="contact-input" />
                         </div>
                         <input {...register('subject')} type="text" placeholder="Subject" className="contact-input" />
