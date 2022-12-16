@@ -1,13 +1,17 @@
 import Link from 'next/link'
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
+import { urlFor } from '../sanity'
+import { pageInfo } from '../typings'
 import BackgroundCircles from './BackgroundCircles'
 
-type Props = {}
+type Props = {
+    pageInfo: pageInfo
+}
 
-const Hero = (props: Props) => {
+const Hero = ({pageInfo}: Props) => {
     const [text, count] = useTypewriter({
-        words: ["Hi, I'm Daf",
+        words: [`Hi, I'm ${pageInfo.name}`,
             "MusicLover.jsx",
             "<HorrorFan />"
         ],
@@ -16,12 +20,13 @@ const Hero = (props: Props) => {
     })
     return (
         <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+            <>
             <BackgroundCircles />
             <img
                 className="relative rounded-full h-32 w-32 mx-auto object-cover"
-                src="https://avatars.githubusercontent.com/u/82343891?v=4 w-50" alt="Profile picture"></img>
+                src={urlFor(pageInfo.heroImage)} alt="Profile picture"></img>
             <div className="z-20">
-                <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">Software Developer</h2>
+                <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">{pageInfo.role}</h2>
                 <h1 className="text-5xl lg:text-6xl font-semibold px-10">
                     <span className="mr-3">{text}</span>
                     <Cursor cursorColor="#5ceacd" />
@@ -38,6 +43,7 @@ const Hero = (props: Props) => {
                     </Link>
                 </div>
             </div>
+            </>
         </div>
     )
 }
