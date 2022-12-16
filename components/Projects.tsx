@@ -13,6 +13,7 @@ const Projects = (props: Props) => {
             <div className="realtive w-full flex overflow-x-scroll min-h-screen overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5ceacd]/80 scrollbar-thin md:pt-20">
                 {projects.map((project, i) =>
                     <motion.div
+                        key={i}
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 1.5 }}
