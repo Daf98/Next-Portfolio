@@ -28,9 +28,9 @@ const About = (props: Props) => {
                 }}
                 className="space-y-10 px-0 md:px-10"
             >
-                <h4 className="font-semibold text-3xl lg:text-4xl">Hi! My name is Daf and I'm a software developer</h4>
+                <h4 className="font-semibold pt-20 text-3xl lg:text-4xl">Hi! My name is Daf and I'm a software developer</h4>
                 <p className="text-base text-justify sm:text-sm md:text-md lg:text-lg"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque egestas accumsan libero fringilla pulvinar. Donec tristique risus eget neque vestibulum tristique. Proin risus tortor, fermentum et euismod quis, posuere eget nisi. Curabitur sit amet dolor sit amet leo lacinia volutpat. Vestibulum pellentesque non magna id egestas. Sed dolor metus, feugiat sed rutrum et, ullamcorper ac velit. </p>
             </motion.div>
         </motion.div>
     )
