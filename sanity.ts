@@ -10,7 +10,5 @@ export const sanityClient = createClient({
 
 export const urlFor = (source: any) => createImageUrlBuilder({
     dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production", // "production"
-    projectId: "76yhh5ly",
-    apiVersion: "2021-03-25",
-    useCdn: process.env.NODE_ENV === "production", // server-side is statically generated, the CDN is only necessary beneficial if queries are called on-demand
+    projectId: "76yhh5ly", // server-side is statically generated, the CDN is only necessary beneficial if queries are called on-demand
 }).image(source);
