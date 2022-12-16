@@ -9,8 +9,8 @@ const Projects = (props: Props) => {
     ]
     return (
         <div className="h-screen relative flex py-10 overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
-            <h3 className="absolute top-24 uppercase tracking-[20px] text-[#5ceacd] text-2xl">Projects</h3>
-            <div className="realtive w-full flex overflow-x-scroll min-h-screen overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5ceacd]/80 scrollbar-thin">
+            <h3 className="absolute top-24 uppercase tracking-[20px] text-[#5ceacd] text-2xl ">Projects</h3>
+            <div className="realtive w-full flex overflow-x-scroll min-h-screen overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5ceacd]/80 scrollbar-thin md:pt-20">
                 {projects.map((project, i) =>
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -35,11 +35,11 @@ const Projects = (props: Props) => {
                             className="w-[95px] h-[95px] sm:w-[125px] sm:h-[125px] md:h-[200px] md:w-[200px] rounded-2xl"
                             src="https://avatars.githubusercontent.com/u/82343891?v=4"
                         />
-                        <div className="text-center px-0 md:px-10 max-w-10">
+                        <div className="text-center px-0 md:px-10 max-w-10 xl:pt-10">
                             <h4 className="text-4xl font-semibold">
                                 <span className="underline decoration-[#5ceacd]/50">Case study {i + 1} of {projects.length}:</span> Astrology Observations
                             </h4>
-                            <p className="text-lg text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p className="text-lg text-center md:text-left pt-5 xl:pt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </motion.div>
                 )}
