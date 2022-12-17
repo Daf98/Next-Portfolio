@@ -24,6 +24,7 @@
     "react-hook-form": "^7.40.0",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0",
+    "sanity": "^3.0.6",
     "tailwind-scrollbar": "^2.0.1",
     "typescript": "4.9.4"
   },
